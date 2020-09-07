@@ -5,6 +5,10 @@ export default {
     state.lastMessage = payload;
   },
   [types.MUTATE_MESSAGES]: (state, payload) => {
-    state.messages = [...state.messages, ...payload.messages];
+    const messagesValues = payload.messages.map(message => message.value);
+    state.messages = [...state.messages, ...messagesValues];
+  },
+  [types.NEXT_MESSAGE]: (state) => {
+    state.currentMessageIndex++;
   },
 };

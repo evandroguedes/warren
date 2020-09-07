@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
-import VueTyperPlugin from 'vue-typer'
+import VueTypedJs from 'vue-typed-js'
 
-Vue.use(VueTyperPlugin);
+Vue.use(VueTypedJs);
 
 Vue.config.productionTip = false
 

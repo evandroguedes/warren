@@ -7,6 +7,8 @@ const suitability = {
   state: () => ({
     messages: [],
     lastMessage: {},
+    currentMessage: [],
+    currentMessageIndex: 0,
   }),
   mutations,
   actions,

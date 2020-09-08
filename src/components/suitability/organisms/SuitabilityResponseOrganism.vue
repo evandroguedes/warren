@@ -1,5 +1,7 @@
 <template>
-  <div ref="container"></div>
+  <v-list dark>
+    <div ref="container"></div>
+  </v-list>
 </template>
 
 <script>
@@ -22,10 +24,13 @@ export default {
   methods: {
     ...mapMutations('suitability', {
       nextMessage: TYPES.NEXT_MESSAGE,
+      showFooter: TYPES.TOGGLE_FOOTER_VISIBILTY,
     }),
     onTypeComplete() {
       if (!this.isTheLastMessage) {
         this.nextMessage();
+      } else {
+        this.showFooter();
       }
     },
     addMessage() {

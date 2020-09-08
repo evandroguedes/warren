@@ -11,4 +11,7 @@ export default {
   [types.NEXT_MESSAGE]: (state) => {
     state.currentMessageIndex++;
   },
+  [types.TOGGLE_FOOTER_VISIBILTY]: (state) => {
+    state.shouldShowFooter = !state.shouldShowFooter;
+  },
 };

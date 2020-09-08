@@ -5,10 +5,15 @@ import mutations from './mutations';
 const suitability = {
   namespaced: true,
   state: () => ({
+    answers: {},
+    answersHistory: [],
+    currentAnswerIndex: 0,
     messages: [],
     lastMessage: {},
-    currentMessage: [],
     currentMessageIndex: 0,
+    shouldShowFooter: false,
+    nameInitial: '',
+    finishResult: {},
   }),
   mutations,
   actions,

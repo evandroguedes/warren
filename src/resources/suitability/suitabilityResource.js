@@ -10,3 +10,9 @@ export function postConversationMessage({ id, answers }) {
     answers,
   });
 }
+
+export function postFinish({ answers }) {
+  return api.post(`${BASE_URL}api/v2/${context}/finish`, {
+    answers,
+  });
+}

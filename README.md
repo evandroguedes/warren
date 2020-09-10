@@ -1,4 +1,11 @@
 # warren
+[Online demo](https://warren-challenge.surge.sh)
+
+## Important
+- For the sake of simplicity there are only some basic unit tests here on the folder tests/unit
+
+### Atomic design
+The components structure follow the Atomic Design pattern ([atomicdesign.bradfrost.com](https://atomicdesign.bradfrost.com))
 
 ## Project setup
 ```

@@ -27,11 +27,6 @@ const blankReplyFormResponse = {
   responses: [],
 };
 
-/* const parseAnswers = state => {
-  if (state.length > 1) return { [state.lastMessage?.data?.id]: state.answers }
-  return { [state.lastMessage?.data?.id]: state.answers[0] }
-}; */
-
 export default {
   [types.CURRENT_MESSAGE]: state => state.messages[state.currentMessageIndex],
   [types.IS_CURRENT_MESSAGE_THE_LAST_ONE]: state => state.currentMessageIndex === (state.messages.length - 1),

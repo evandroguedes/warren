@@ -1,5 +1,5 @@
 <template>
-  <v-form ref="form" v-model="valid">
+  <v-form ref="form" v-model="valid" @submit="action" onSubmit="return false;">
     <div ref="form-container">
       <inputs-reply-form-atom
         :items="currentReplyForm.result.items"
